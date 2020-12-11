@@ -28,7 +28,7 @@ int main()
     {
         for(int j=0;j!=3;j++)
         {
-        cout<<ProductMatrix[i][j]<<"  ";
+        cout<<ProductMatrix[i][j]<<"     ";
         }
     cout<<"\n";
     }
