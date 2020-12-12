@@ -1,35 +1,31 @@
 #include <iostream>
-#include <cstring>
-#define Max 100
+#include <string.h>
+#define MAX 100
 
 using namespace std;
 
 int main()
 {
-    char string[Max];
+    char word[MAX];
     char temp;
     
-    cout<<"Enter the string ";
-    cin>>string;
+    cout<<"Enter a string ";
+    cin>>word;
     int n;
-    for(n=0;string[n]!='\0';n++)
+    n=strlen(word);
+     for(int i=0;i<n;i++)
     {
-        
-    }
-    for(int i=0;i<n;i++)
-    {
-        for(int j=i+1;j<n;j++)
+        for(int j=0;j<(n-1);j++)
         {
-          if(string[i]>string[j])
-         
-          
-            temp=string[i];
-            string[i]=string[j];
-            string[j]=temp;
-        }    
-        
+            if((int)word[j]>(int)word[j+1])
+            {
+                temp=word[j];
+                word[j]=word[j+1];
+                word[j+1]=temp;
+            }
+        }
     }
-    cout<<string;
+    cout<<word;
     
     
     return 0;
