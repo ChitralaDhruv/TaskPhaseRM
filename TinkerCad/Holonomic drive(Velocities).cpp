@@ -25,16 +25,15 @@ int main()
     cin>>v;
     cout<<"Enter the direction of Bot (Angle) ";
     cin>>x;
-    cout<<"Enter the angles made by the four wheels ";
-    cin>>y1>>y2>>y3>>y4;
+    float WheelArray[4]={45,315,225,135};
     
     
-    float v1=velocity(v,x,y1);
-    float v2=velocity(v,x,y2);
-    float v3=velocity(v,x,y3);
-    float v4=velocity(v,x,y4);
+    float v1=velocity(v,x,WheelArray[0]);
+    float v2=velocity(v,x,WheelArray[1]);
+    float v3=velocity(v,x,WheelArray[2]);
+    float v4=velocity(v,x,WheelArray[3]);
     
-    //cout<<v1<<endl<<v2<<endl<<v3<<endl<<v4<<endl;
+    
 
     return 0;
 }
