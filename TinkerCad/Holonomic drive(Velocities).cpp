@@ -9,7 +9,7 @@ float velocity(float v,float x,float y)
 {
     float conv=PI/180;
     float vel=(v*(cos(x*conv)*cos(y*conv)))+(v*(sin(x*conv)*sin(y*conv)));
-    cout<<vel<<endl;
+    cout<<fixed(vel)<<endl;
     
     return vel;
     
